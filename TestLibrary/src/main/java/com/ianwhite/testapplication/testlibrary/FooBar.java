@@ -12,4 +12,8 @@ public class FooBar {
     //Shhh...theyll never know!
     return 99;
   }
+
+  public static int generateCoolerNumber(){
+    return 999;
+  }
 }
