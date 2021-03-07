@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
  */
 public class Bar {
   private int mMyCoolNumber;
+  private int mMyCoolerNumber;
 
   /**
    * @return {@link #mMyCoolNumber}
@@ -22,5 +23,12 @@ public class Bar {
    */
   public void setMyCoolNumber(@NonNull int myCoolNumber) {
     mMyCoolNumber = myCoolNumber;
+  }
+
+  /**
+   * @param myCoolerNumber sets {@link #mMyCoolerNumber}
+   */
+  public void setMyCoolerNumber(@NonNull int myCoolerNumber) {
+    mMyCoolerNumber = myCoolerNumber;
   }
 }
