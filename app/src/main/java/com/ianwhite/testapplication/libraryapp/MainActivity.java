@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     setContentView(R.layout.activity_main);
 
               Bar bar = new Bar();
-    bar     .setMyCoolNumber(99);
-    bar.setMyCoolerNumber(999);
+    bar.setMyCoolNumber(99);
+        bar.setMyCoolerNumber(999);
   }
 }
