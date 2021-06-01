@@ -8,11 +8,11 @@ public class MainActivity extends AppCompatActivity {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState);
+           super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
 
-    Bar bar = new Bar();
-    bar.setMyCoolNumber(99);
+              Bar bar = new Bar();
+    bar     .setMyCoolNumber(99);
     bar.setMyCoolerNumber(999);
   }
 }
