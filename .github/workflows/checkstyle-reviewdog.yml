@@ -1,0 +1,13 @@
+name: checkstyle & reviewdog
+
+on: [ push ]
+
+jobs:
+  build:
+  
+    runs-on: ubuntu-latest
+  
+    steps:
+      - name: Echo test
+        run: echo "Hello World"
+  
