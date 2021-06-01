@@ -23,5 +23,6 @@ jobs:
       - name: Download checkstyle
         run: curl -L -s https://github.com/checkstyle/checkstyle/releases/download/checkstyle-8.43/checkstyle-8.43-all.jar > checkstyle.jar
         
-      - name: Run checkstyle
-        run: java -jar checkstyle.jar -c config/checkstyle/checkstyle.xml app/src/main/java/com/ianwhite/testapplication/libraryapp/
+      - name: Run checkstyle & reviewdog
+        run: java -jar checkstyle.jar -c config/checkstyle/checkstyle.xml app/src/main/java/com/ianwhite/testapplication/libraryapp/ \
+          | reviewdog -f=checkstyle \
