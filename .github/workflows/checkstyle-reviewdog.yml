@@ -23,5 +23,5 @@ jobs:
       - name: Download checkstyle
         run: curl -s https://github.com/checkstyle/checkstyle/releases/download/checkstyle-${INPUT_CHECKSTYLE_VERSION}/checkstyle-${INPUT_CHECKSTYLE_VERSION}-all.jar > checkstyle.jar
         
-      - name: Test output
-        run: ls
+      - name: Run checkstyle
+        run: java -jar checkstyle.jar -c config/checkstyle/checkstyle.xml app/src/main/java/com/ianwhite/testapplication/libraryapp/
