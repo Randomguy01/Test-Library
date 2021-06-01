@@ -24,5 +24,7 @@ jobs:
         run: curl -L -s https://github.com/checkstyle/checkstyle/releases/download/checkstyle-8.43/checkstyle-8.43-all.jar > checkstyle.jar
         
       - name: Run checkstyle & reviewdog
+        env:
+          REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: java -jar checkstyle.jar -c config/checkstyle/checkstyle.xml app/src/main/java/com/ianwhite/testapplication/libraryapp/ \
           | reviewdog -f=checkstyle -reporter="github-check"
