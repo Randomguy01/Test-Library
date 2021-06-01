@@ -25,4 +25,4 @@ jobs:
         
       - name: Run checkstyle & reviewdog
         run: java -jar checkstyle.jar -c config/checkstyle/checkstyle.xml app/src/main/java/com/ianwhite/testapplication/libraryapp/ \
-          | reviewdog -f=checkstyle \
+          | reviewdog -f=checkstyle -reporter="github-check"
